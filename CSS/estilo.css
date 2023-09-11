@@ -26,7 +26,7 @@
     align-items: center;
     width: 12.2em;
     height: 100px;
-    background-color: rgba(98, 95, 95, 0.217);
+    background-color: rgba(98, 95, 95, 0);
     border-radius: 20px 20px 0px 0px;
     font-size: 32px;
     color: aliceblue;
@@ -63,12 +63,53 @@ button:hover {
     background-color: rgb(103, 236, 103);
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:700px) {
 
     .calculadora {
         background-color: rgba(0, 0, 0, 0.585);
         width: 400px;
-        transform: scale(0.6);
+        transform: scale(0.5);
         border-radius: 20px;
+    }
+}
+
+@media screen and (min-width:300px) {
+
+    .calculadora {
+        background-color: rgba(0, 0, 0, 0.585);
+        width: 380px;
+        transform: scale(0.8);
+        border-radius: 20px;
+    }
+
+    button {
+        width: 80px;
+        height: 70px;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px 2px;
+    }
+
+    .resultado {
+        margin-left: 10px;
+        width: 8.5em;
+        background-color: rgb(103, 236, 103);
+    }
+
+    #resultado {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        width: 12.2em;
+        height: 100px;
+        background-color: rgba(87, 86, 86, 0);
+        border-radius: 20px 20px 0px 0px;
+        font-size: 28px;
+        color: aliceblue;
+        overflow: hidden;
     }
 }
